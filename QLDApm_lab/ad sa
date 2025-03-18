@@ -1,0 +1,45 @@
+[1mdiff --git a/src/testB.py b/src/testB.py[m
+[1mindex e69de29..4ca115e 100644[m
+[1m--- a/src/testB.py[m
+[1m+++ b/src/testB.py[m
+[36m@@ -0,0 +1,40 @@[m
+[32m+[m[32m# Chương trình thực hiện các phép toán cơ bản[m
+[32m+[m[32mdef calculator():[m
+[32m+[m[32m    print("Chọn phép toán:")[m
+[32m+[m[32m    print("1. Cộng (+)")[m
+[32m+[m[32m    print("2. Trừ (-)")[m
+[32m+[m[32m    print("3. Nhân (*)")[m
+[32m+[m[32m    print("4. Chia (/)")[m
+[32m+[m[32m    print("5. Lũy thừa (**)")[m
+[32m+[m
+[32m+[m[32m    # Lấy lựa chọn từ người dùng[m
+[32m+[m[32m    choice = input("Nhập lựa chọn (1/2/3/4/5): ")[m
+[32m+[m
+[32m+[m[32m    # Kiểm tra đầu vào hợp lệ[m
+[32m+[m[32m    if choice in ['1', '2', '3', '4', '5']:[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            # Nhập hai số[m
+[32m+[m[32m            num1 = float(input("Nhập số thứ nhất: "))[m
+[32m+[m[32m            num2 = float(input("Nhập số thứ hai: "))[m
+[32m+[m
+[32m+[m[32m            # Thực hiện phép toán[m
+[32m+[m[32m            if choice == '1':[m
+[32m+[m[32m                print(f"Kết quả: {num1} + {num2} = {num1 + num2}")[m
+[32m+[m[32m            elif choice == '2':[m
+[32m+[m[32m                print(f"Kết quả: {num1} - {num2} = {num1 - num2}")[m
+[32m+[m[32m            elif choice == '3':[m
+[32m+[m[32m                print(f"Kết quả: {num1} * {num2} = {num1 * num2}")[m
+[32m+[m[32m            elif choice == '4':[m
+[32m+[m[32m                if num2 != 0:[m
+[32m+[m[32m                    print(f"Kết quả: {num1} / {num2} = {num1 / num2}")[m
+[32m+[m[32m                else:[m
+[32m+[m[32m                    print("Lỗi: Không thể chia cho 0!")[m
+[32m+[m[32m            elif choice == '5':[m
+[32m+[m[32m                print(f"Kết quả: {num1} ** {num2} = {num1 ** num2}")[m
+[32m+[m[32m        except ValueError:[m
+[32m+[m[32m            print("Lỗi: Vui lòng nhập số hợp lệ!")[m
+[32m+[m[32m    else:[m
+[32m+[m[32m        print("Lựa chọn không hợp lệ. Vui lòng thử lại.")[m
+[32m+[m
+[32m+[m[32m# Gọi hàm[m
+[32m+[m[32mcalculator()[m

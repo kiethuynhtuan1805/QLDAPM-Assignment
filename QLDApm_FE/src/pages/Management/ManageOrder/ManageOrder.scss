@@ -1,0 +1,75 @@
+.ManageOrder {
+  padding: 20px;
+
+  // Nút thêm đơn hàng
+  .ant-btn {
+    background-color: #52c41a;  // Màu xanh lá
+    color: white;
+    border: none;
+    &:hover {
+      background-color: #73d13d; // Màu xanh lá đậm khi hover
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: flex-end;  // Căn lề phải cho button
+    margin-bottom: 20px;  // Khoảng cách phía dưới nếu cần
+  }
+
+  // Bảng đơn hàng
+  .ant-table {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    // Thêm một số phong cách cho các cột trong bảng
+    .ant-table-thead > tr > th {
+      background-color: var(--COLOR-light-gray);
+      font-size: 1rem;
+      color: var(--COLOR-dark);
+      text-align: center;
+    }
+
+    // Các hàng trong bảng
+    .ant-table-tbody > tr > td {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  // Nút sửa và xóa
+  .ant-btn {
+    background-color: var(--COLOR-gray);
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: var(--COLOR-gray-hover);
+    }
+  }
+
+  // Popconfirm styles
+  .ant-popover-inner {
+    border-radius: 6px;
+  }
+
+  // Các tag trạng thái
+  .ant-tag {
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 6px 12px;
+  }
+
+  // Khi các trạng thái 'Đang hoạt động' và 'Không hoạt động'
+  .ant-tag-success {
+    background-color: var(--COLOR-success);
+    color: white;
+  }
+
+  .ant-tag-error {
+    background-color: var(--COLOR-error);
+    color: white;
+  }
+}

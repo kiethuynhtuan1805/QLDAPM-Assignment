@@ -1,0 +1,73 @@
+.add-order {
+    margin: 20px; // Khoảng cách bên ngoài form
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+  
+    .ant-form-item {
+      margin-bottom: 16px;
+    }
+  
+    .ant-form-item-label {
+      font-weight: 600;
+      font-size: 14px;
+      color: #555;
+    }
+  
+    .ant-input {
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .ant-select {
+      width: 100%;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  
+    .ant-btn {
+      width: 100%;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #28a745; // Màu xanh lá
+      border-color: #28a745;
+      color: white;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: #218838;
+        border-color: #218838;
+      }
+  
+      &:disabled {
+        background-color: #ccc;
+        border-color: #ccc;
+        color: #999;
+      }
+    }
+  
+    .ant-form-item-control-input-content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .ant-input-number {
+      width: 100%;
+    }
+  
+    .add-order-button {
+      margin-top: 20px; // Khoảng cách giữa nút và form
+    }
+  }

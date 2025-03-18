@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: RestaurantManagement
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/Restaurant_Managenent?serverTimezone=Asia/Ho_Chi_Minh
+    username: 3pPp29WZ1477fWf.root
+    password: RFQAE1DA8jp1KvPB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jackson:
+    time-zone: Asia/Ho_Chi_Minh
+
+server:
+  port: 5000
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui-custom.html
+
+
+aws:
+  accessKey: AKIAYQNJS6M56LXY5MM2
+  secretKey: 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
+  s3:
+    region: ap-southeast-2
+    bucketName: restaurantmanagement
+
+jwt:
+  signerKey: "cDCqMmTgGRRzgxHNq7uRGy2ngaf1oTDec8qnQEma3jXZ5wczJpfHmjtUpGSVwsuK"
+  refreshKey: "0hmMT6nkbkj7ByTfeMuLOjI6JNDzcpaOWK0tv6h0PUMvHVpN6EqVIms7gcikowQL"
